@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&family=Raleway:ital,wght@1,300&family=Roboto+Mono:wght@100&display=swap');
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+:root{
+    --light:#fefae0;
+    --secondary:grey;
+    --dark: black;
+    --primary-color:#264653;
+    --secondary-color:black;
+    --border:#a8dadc;
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+*>*{
+    box-sizing: border-box;
+}
+
+.text-light{
+    color: var(--light);
+}
+
+.text-secondary{
+    color:var(--secondary);
+}
+
+.text-dark{
+    color:var(--dark);
+}
+
+.text-primary{
+    color:var(--primary-color)
+}
+
+.bg-light{
+    background-color:#f8f9fa;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.img-fluid{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.text-title{
+    font-family: 'Playfair Display', serif;
+    font: bold;
+}
+
+.display-1{
+    font-size: 22px;
+}
+
+.display{
+    font-size: 16px;
+}
+
+.display-3{
+    font-size: 14px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.btn{
+    padding: 15px 20px;
+    border:none;
+}
+
+.btn-primary{
+    border-radius: 4px;
+    background-color: rgb(245, 245, 245);
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-brand{
+    font-family:'PT Sans', sans-serif;
+    font-weight:bold;
+    align-self: center;
+    font-size: 32px;
+}
+
+
+.nav-link{
+    font-size: 18px;
+    margin: 12px;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color:var(--primary-color)
+}
+
+.search-box{
+    display: inline;
+    border-right: 1px solid var(--secondary-color);
+    padding-right: 12px;
+    margin-right: 10px;
+}
+
+#site-main{
+    margin-top: 8em;
+}
+
+#posts{
+    margin-bottom: 5em;
+}
+
+.grid{
+    margin: 0 auto;
+}
+
+.grid .grid-item{
+    width:calc(33.3333% - 20px);
+    margin-bottom: 3em;
+}
+
+#footer{
+    padding-top: 4em;
+}
+
+.row{
+    display: flex;
+}
+
+.col-3{
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding-right: 35px;
+}
+
+@media(max-width:1024px){
+    .row{
+        flex-wrap: wrap;
+    }
+}
+
+.col-3{
+    flex: 0 0 100%;
+    max-width: 100%;
+   
+}
+
+
+@media(max-width:992px){
+    .navbar{
+    flex-direction:column;
+    }
+}
+
+@media (max-width:768px){
+    .grid .grid-item{
+        width: calc(50% - 20px);
+    }
+}
+
+.col-3{
+    flex: 0 0 50%;
+    max-width: 50%;
+   
+}
+
+
+
+@media(max-width:574px){
+    .toggle-button{
+    display:inital
+    }
+
+    .collapse{
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.8s ease-in;
+    }
+
+    .collapse .nav-link{
+       display: block;
+       text-align: center; 
+    }
+
+    .search-box{
+        border-right: none;
+    }
+
+    .collapse-toggle{
+        max-height: 500px;
+    }
+
+}
+
+.container-new{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:  "sidebar headline headline headline"
+    "sidebar content1 content1 content1"
+    "sidebar content1 content1 content1"
+    "footer footer footer footer";
+    grid-gap: 5px;
+}
+
+#headline{
+    grid-area: headline;
+    color: var(--dark);
+}
+
+#sidebar{
+    background-image: url(./assets/pexels-zen-chung-5749819.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    grid-area: sidebar;
+}
+
+#content1{
+    grid-area:content1;
+    color:var(--dark);
+    border: 20px;
+}
+
+footer{
+
+    grid-area: footer;
+}
+
+
+h3{
+    font-weight: bolder;
+}
+  
+#newfooter{
+    border-style:groove;
+    
+}
