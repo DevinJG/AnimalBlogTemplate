@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&family=Raleway:ital,wght@1,300&family=Roboto+Mono:wght@100&display=swap');
-
+@import "newpage.css";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&family=Raleway:ital,wght@1,300&family=Roboto+Mono:wght@100&display=swap');
 /* font-family: 'Playfair Display', serif;
 font-family: 'PT Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
@@ -264,3 +265,12 @@ h3{
     border-style:groove;
     
 }
+
+blockquote{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
