@@ -1,0 +1,44 @@
+.container-new1{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:  "sidebar headline headline headline"
+    "sidebar content1 content1 content1"
+    "sidebar content1 content1 content1"
+    "footer footer footer footer";
+    grid-gap: 5px;
+}
+
+#headline1{
+    grid-area: headline;
+    color: var(--dark);
+}
+
+#sidebar1{
+    background-image: url(/assets/pexels-skyler-ewing-4597755.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    grid-area: sidebar;
+}
+
+#content1{
+    grid-area:content1;
+    color:var(--dark);
+    border: 20px;
+}
+
+footer{
+
+    grid-area: footer;
+}
+
+
+h3{
+    font-weight: bolder;
+}
+  
+#newfooter{
+    border-style:groove;
+    
+}
