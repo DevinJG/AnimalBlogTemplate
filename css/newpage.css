@@ -1,4 +1,4 @@
-.container-new1{
+.container-new{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -6,20 +6,21 @@
     grid-template-areas:  "sidebar headline headline headline"
     "sidebar content1 content1 content1"
     "sidebar content1 content1 content1"
-    "footer footer footer footer";
+    "sidebar footer footer footer";
     grid-gap: 5px;
 }
 
-#headline1{
+#headline{
     grid-area: headline;
     color: var(--dark);
 }
 
 #sidebar1{
-    background-image: url(/assets/pexels-skyler-ewing-4597755.jpg);
-    background-size: cover;
+    background-image: url(/assets/pexels-zen-chung-5749771.jpg);
+    background-size: 700px;
     border-radius: 5%;
     grid-area: sidebar;
+    
 }
 
 #content1{
@@ -38,7 +39,16 @@ h3{
     font-weight: bolder;
 }
   
-#newfooter{
+footer{
     border-style:groove;
     
 }
+
+
+h3{
+    font-weight: bolder;
+}
+  
+
+
+  

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&family=Raleway:ital,wght@1,300&family=Roboto+Mono:wght@100&display=swap');
-@import "newpage.css";
+@import "/css/newpage.css";
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&family=Raleway:ital,wght@1,300&family=Roboto+Mono:wght@100&display=swap');
 /* font-family: 'Playfair Display', serif;
 font-family: 'PT Sans', sans-serif;
@@ -162,18 +162,23 @@ a{
     padding-right: 35px;
 }
 
-@media(max-width:1024px){
+@media (max-width : 1024px){
     .row{
-        flex-wrap: wrap;
+       flex-wrap: wrap;
     }
-}
+
+    .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
 
 .col-3{
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
    
 }
-
 
 @media(max-width:992px){
     .navbar{
@@ -181,10 +186,17 @@ a{
     }
 }
 
+
 @media (max-width:768px){
     .grid .grid-item{
         width: calc(50% - 20px);
     }
+    .col-3{
+        flex: 0 0 100%;
+        max-width: 100%;
+       
+    }
+    
 }
 
 .col-3{
@@ -194,33 +206,6 @@ a{
 }
 
 
-
-@media(max-width:574px){
-    .toggle-button{
-    display:inital
-    }
-
-    .collapse{
-        max-height: 0;
-        overflow: hidden;
-        transition: all 0.8s ease-in;
-    }
-
-    .collapse .nav-link{
-       display: block;
-       text-align: center; 
-    }
-
-    .search-box{
-        border-right: none;
-    }
-
-    .collapse-toggle{
-        max-height: 500px;
-    }
-
-}
-
 .container-new{
     display: grid;
     height: 100vh;
@@ -229,7 +214,7 @@ a{
     grid-template-areas:  "sidebar headline headline headline"
     "sidebar content1 content1 content1"
     "sidebar content1 content1 content1"
-    "footer footer footer footer";
+    "sidebar footer footer footer";
     grid-gap: 5px;
 }
 
@@ -239,10 +224,12 @@ a{
 }
 
 #sidebar{
-    background-image: url(./assets/pexels-zen-chung-5749819.jpg);
-    background-size: cover;
+    background-image: url(/assets/pexels-roman-odintsov-4555468.jpg);
     border-radius: 5%;
+    background-size: 600px;
     grid-area: sidebar;
+    
+    
 }
 
 #content1{
@@ -261,7 +248,7 @@ h3{
     font-weight: bolder;
 }
   
-#newfooter{
+footer{
     border-style:groove;
     
 }
@@ -274,3 +261,4 @@ blockquote{
     margin-right: 40px;
 }
 
+}
