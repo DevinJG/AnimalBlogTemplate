@@ -2,6 +2,8 @@
 
 This is a basic template for a blog focusing on topics related to dogs. It includes sections for discussing the importance of bonding with a dog, engaging activities for bonding, and effective communication techniques.
 
+<img width="1920" alt="Screenshot 2024-04-01 at 11 20 09 PM" src="https://github.com/DevinJG/AnimalBlogTemplate/assets/86039118/cbaf9d3c-664e-439c-a5c2-355b52126fcb">
+
 ## Usage
 
 1. Clone or download this repository to your local machine.
