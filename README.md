@@ -4,7 +4,11 @@ This is a basic template for a blog focusing on topics related to dogs. It inclu
 
 <img width="1920" alt="Screenshot 2024-04-01 at 11 20 09 PM" src="https://github.com/DevinJG/AnimalBlogTemplate/assets/86039118/cbaf9d3c-664e-439c-a5c2-355b52126fcb">
 
+
+
 <img width="1892" alt="Screenshot 2024-04-01 at 11 20 52 PM" src="https://github.com/DevinJG/AnimalBlogTemplate/assets/86039118/edfb84bf-d585-4765-86c0-10038111f33a">
+
+
 
 <img width="1907" alt="Screenshot 2024-04-01 at 11 21 27 PM" src="https://github.com/DevinJG/AnimalBlogTemplate/assets/86039118/865770ad-2dd7-4c95-b7c9-0cb836f46811">
 
